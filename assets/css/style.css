@@ -158,6 +158,15 @@ main.wrap { padding-top: 48px; padding-bottom: 64px; }
 
 .post p { margin: 0 0 20px; }
 
+.post img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 32px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
 .post strong { color: var(--text); }
 
 .site-footer {

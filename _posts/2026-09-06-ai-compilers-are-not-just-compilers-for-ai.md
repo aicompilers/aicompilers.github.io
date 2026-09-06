@@ -28,6 +28,8 @@ And inside these models, an even smaller vocabulary appears repeatedly:
 
 matrix multiplication, convolution, attention, normalization, reductions, element-wise operations, and data movement between them.
 
+![Model families converge on a small shared vocabulary of operations]({{ '/assets/img/shared_op_vocabulary_v2.svg' | relative_url }})
+
 This is an unusual situation for compiler design.
 
 If thousands of models contain variations of the same computational structures, recognizing those structures becomes extremely valuable. An AI compiler can identify attention, fuse familiar operator sequences, specialize matrix multiplications for known shapes, or optimize an entire subgraph as a unit.
@@ -74,6 +76,8 @@ AI compilation therefore has several useful notions of correctness:
 
 These are not the same thing.
 
+![Correctness in AI compilation is a spectrum, not a binary]({{ '/assets/img/correctness_spectrum_v2.svg' | relative_url }})
+
 Two implementations can produce different tensor values while the model produces effectively identical predictions. Conversely, a numerical difference that appears tiny locally can propagate through a model and cause a measurable accuracy regression.
 
 Quantization makes this particularly obvious.
@@ -107,6 +111,8 @@ AI accelerators can perform extraordinary amounts of arithmetic. A matrix engine
 Keeping it busy is another matter.
 
 Weights and activations have to move through a memory hierarchy before the arithmetic can happen. Intermediate results have to go somewhere afterwards. Moving all of this data can consume more time and energy than the arithmetic itself.
+
+![Moving data can cost more than computing on it]({{ '/assets/img/data_movement_v2.svg' | relative_url }})
 
 The compiler therefore spends much of its effort answering questions about data:
 
