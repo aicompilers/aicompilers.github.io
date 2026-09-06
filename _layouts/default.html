@@ -7,14 +7,18 @@
   {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">{% endif %}
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/codai-logo.svg' | relative_url }}">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <a class="site-title" href="{{ '/' | relative_url }}">AI <span>Compilers</span></a>
+      <a class="site-title" href="{{ '/' | relative_url }}">
+        {% include logo.svg %}
+        <span>AICOMPILERS.ORG</span>
+      </a>
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}">Blog</a>
-        <a href="https://www.aicompilers.org" target="_blank" rel="noopener">CODAI 2027 ↗</a>
+        <a href="https://www.aicompilers.org" target="_blank" rel="noopener">CODAI</a>
       </nav>
     </div>
   </header>

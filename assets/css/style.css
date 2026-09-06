@@ -1,6 +1,4 @@
 :root {
-  --accent: #00914c;
-  --accent-dark: #00763e;
   --text: #1f1f1f;
   --text-muted: #5f5f5f;
   --bg: #ffffff;
@@ -27,8 +25,8 @@ h1, h2, h3, h4 {
   color: var(--text);
 }
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { color: var(--accent-dark); text-decoration: underline; }
+a { color: var(--text); text-decoration: underline; }
+a:hover { color: var(--text); text-decoration: none; }
 
 .site-header {
   border-bottom: 1px solid var(--border);
@@ -47,14 +45,24 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 }
 
 .site-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: 'Oswald', Arial, sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 0.02em;
   color: var(--text);
+  text-decoration: none;
 }
 
-.site-title span { color: var(--accent); }
+.site-title:hover { text-decoration: none; }
+
+.logo-icon {
+  width: 26px;
+  height: 32px;
+  flex-shrink: 0;
+}
 
 .site-nav a {
   color: var(--text);
@@ -63,9 +71,10 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   text-transform: uppercase;
   letter-spacing: 0.03em;
   margin-left: 22px;
+  text-decoration: none;
 }
 
-.site-nav a:hover { color: var(--accent); text-decoration: none; }
+.site-nav a:hover { text-decoration: underline; }
 
 .hero {
   background: var(--bg-alt);
@@ -79,7 +88,7 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 13px;
-  color: var(--accent);
+  color: var(--text-muted);
   font-weight: 600;
   margin-bottom: 10px;
 }
