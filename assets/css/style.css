@@ -59,8 +59,9 @@ a:hover { color: var(--text); text-decoration: none; }
 .site-title:hover { text-decoration: none; }
 
 .logo-icon {
-  width: 26px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
