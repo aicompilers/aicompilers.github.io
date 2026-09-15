@@ -4,6 +4,8 @@ title: "AI Compilers Are Not Just Compilers for AI"
 date: 2026-09-06
 ---
 
+Michael J. Klaiber · September 6, 2026
+
 *This post touches on some of the questions we'll be digging into at [CODAI 2027](https://www.aicompilers.org) — "Where AI Models Meet Modern Hardware," the annual meeting of the AI compiler community, January 18, 2027 in Glasgow alongside HiPEAC. If any of this is close to your work, consider submitting.*
 
 At first glance, an AI compiler is just a compiler with unusual input and unusual hardware. A model goes in, optimized code comes out.
@@ -13,6 +15,8 @@ But this view misses some of the most interesting differences between AI compila
 AI compilers operate in a world where there are surprisingly few important programs, where transformations may deliberately change numerical results, where moving data can cost more than computing on it, and where the boundary between compiler, runtime, and hardware is still being defined.
 
 These differences change what the compiler knows, what it is allowed to change, and even what it means for the compiled program to be correct.
+
+None of these characteristics is entirely unique to AI compilation. What is unusual is how strongly they appear together and how central they are to the compiler's job.
 
 ## There Are Surprisingly Few Important Programs
 
@@ -194,7 +198,7 @@ Together, these differences change what the compiler knows, what transformations
 
 That is why AI compilers deserve to be studied as more than just another backend for machine learning.
 
-They are an interesting new chapter in compiler design.
+AI compilers are therefore not defined simply by the programs they compile. They operate at the intersection of program semantics, numerical accuracy, runtime behavior, and hardware architecture. This makes AI compilation a distinct and increasingly important area of compiler design.
 
 ## Related Reading
 
