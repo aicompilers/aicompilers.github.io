@@ -127,9 +127,9 @@ That is not a smaller role. It may well be a bigger one.
 
 ## Related Reading
 
-- MLGO: machine-learning-guided optimization in LLVM. An example of ML as a component inside a production compiler.
-- Ansor / TVM auto-scheduling. Learned cost models, search, and tuning logs that make later compilations faster.
-- KernelBench. Evaluating LLM-generated kernels, including the problem of verification.
+- Trofin et al., [MLGO: a Machine Learning Guided Compiler Optimizations Framework](https://arxiv.org/abs/2101.04808) (2021). Machine-learning-guided optimization in LLVM. An example of ML as a component inside a production compiler.
+- Zheng et al., [Ansor: Generating High-Performance Tensor Programs for Deep Learning](https://arxiv.org/abs/2006.06762) (OSDI 2020). TVM auto-scheduling: learned cost models, search, and tuning logs that make later compilations faster.
+- Ouyang et al., [KernelBench: Can LLMs Write Efficient GPU Kernels?](https://arxiv.org/abs/2502.10517) (2025). Evaluating LLM-generated kernels, including the problem of verification.
 
 ---
 
