@@ -52,7 +52,7 @@ There is no reason compilation should be different. Compiler passes are tools. A
 
 ## Correctness Makes It Worse, Not Better
 
-In a [previous post](blogpost_ai_compilers.md) I argued that correctness in AI compilation is not binary. It is a spectrum:
+In a [previous post](https://aicompilers.github.io/2026/09/06/ai-compilers-are-not-just-compilers-for-ai.html) I argued that correctness in AI compilation is not binary. It is a spectrum:
 
 **bit-exact → numerically close → accuracy-equivalent → unacceptable**
 
